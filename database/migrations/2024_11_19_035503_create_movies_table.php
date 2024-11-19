@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('title', 225);
             $table->string('director', 225);
             $table->text('summary');
-            $table->text('genres');
+            $table->string('genres');
             $table->timestamps();
         });
     }

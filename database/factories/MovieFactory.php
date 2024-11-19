@@ -16,13 +16,13 @@ class MovieFactory extends Factory
      */
     public function definition(): array
     {
-        $genres_movie = ['Drama', 'Action', 'Animation', 'Sci-Fi', 'Horror'];
-        shuffle($genres_movie);
+        $genresMovie = ['Drama', 'Action', 'Animation', 'Sci-Fi', 'Horror'];
+        shuffle($genresMovie);
         return [
             'title' => fake()->words(rand(3, 5), true),
             'director' => fake()->name(),
             'summary' => fake()->paragraph(),
-            'genres' => $genres_movie[0]. ',' . $genres_movie[2] . ',' . $genres_movie[1],
+            'genres' => $genresMovie[0]. ',' . $genresMovie[2] . ',' . $genresMovie[1],
         ];
     }
 }
