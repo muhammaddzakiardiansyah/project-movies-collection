@@ -100,7 +100,7 @@
 
         function liveSearch(keySearch) {
             const containerMovies = document.querySelector('.container-movies');
-            const url = `http://project-movies-collection.test/?search=${encodeURIComponent(keySearch)}`;
+            const url = `${document.location.origin}/?search=${encodeURIComponent(keySearch)}`;
 
             fetch(url)
                 .then((res) => res?.json())
